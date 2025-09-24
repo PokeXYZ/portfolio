@@ -12,10 +12,17 @@ export const Hero = () => {
     <div className="flex items-center space-x-3">
       <div className="grow space-y-2">
         <p className="text-4xl font-bold bg-gradient-to-r from-white to-slate-700 bg-clip-text text-transparent">
-          Hi, I'm John Doe
+          Hi, I'm Christopher
         </p>
         <p className="text-1xl">I'm a fullstack developer</p>
-        <Button onClick={handleContactClick}>Contact Me</Button>
+        <Button
+          onClick={() =>
+            (window.location.href =
+              "mailto:ektemail@gmail.com?subject=Hello&body=Hi there!")
+          }
+        >
+          Email Me
+        </Button>
       </div>
       <div className="grow">
         <Image

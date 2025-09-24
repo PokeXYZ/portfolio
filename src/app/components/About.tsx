@@ -39,8 +39,11 @@ export const About = () => {
         </div>
         <div className="grow flex-row w-1/2">
           {aboutMe.map((item) => (
-            <div key={item.title} className="flex text-1xl items-center space-x-2 m-5">
-              <Icon icon={item.icon} className="text-amber-500 w-8 h-6" />
+            <div
+              key={item.title}
+              className="flex text-1xl items-center space-x-2 m-5"
+            >
+              <Icon icon={item.icon} className="text-amber-500 w-9 h-7" />
               <div>
                 <h3 className="font-bold">{item.title}</h3>
                 <p className="text-1xl">{item.description}</p>
