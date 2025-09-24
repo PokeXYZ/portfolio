@@ -1,31 +1,31 @@
 import MobileNavLinks from "./MobileNavLinks";
-import NavLinks from "./NavLinks"
+import NavLinks from "./NavLinks";
 
 const navLinks = [
-  { 
+  {
     title: "About",
-    href: "#about"
+    href: "#about",
   },
   {
     title: "Experience",
-    href: "#experience"
+    href: "#experience",
   },
   {
     title: "Project",
-    href: "#project"
+    href: "#project",
   },
   {
     title: "Contact",
-    href: "#contact"
-  }
-]
+    href: "#contact",
+  },
+];
 
 export function Navbar() {
   return (
-    <div className="flex p-3">
+    <div className="flex p-3 w-full">
       <p className="grow font-bold text-4xl">Portfolio</p>
       <NavLinks links={navLinks} />
       <MobileNavLinks links={navLinks} />
     </div>
-  )
+  );
 }
