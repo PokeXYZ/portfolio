@@ -1,4 +1,4 @@
-"use client"; // needed since we use useEffect
+"use client"; 
 
 import { useEffect } from "react";
 import "./globals.css";
@@ -13,7 +13,7 @@ export default function RootLayout({
     let t = 0;
 
     function frame() {
-      t += 0.01; // adjust speed
+      t += 0.01;
       const x1 = 50 + Math.sin(t) * 30;
       const y1 = 50 + Math.cos(t) * 30;
       const x2 = 50 + Math.cos(t * 0.7) * 40;
